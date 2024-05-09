@@ -47,11 +47,11 @@ terms = work()
 
 # CHECK IF FILE EXISTS
 FILE_PATH = (
-    r'C:\\Users\\luisr\\OneDrive\\Desktop\\MEDIC_BOT\\webscp\\webscp\\data.txt')
+    r'data.txt')
 if os.path.exists(FILE_PATH):
     os.remove(FILE_PATH)
 
 # WRITE TO FILE
-with open(r'C:\\Users\\luisr\\OneDrive\\Desktop\\MEDIC_BOT\\webscp\\webscp\\data.txt', 'w', encoding='utf-8') as f:
+with open(r'data.txt', 'w', encoding='utf-8') as f:
     for element in terms:
         f.write(element.get_text() + '\n')
